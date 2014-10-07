@@ -12,10 +12,12 @@
       <div ng-show="evaData.ready">
         <input type="file" multiple="multiple" evaporate eva-model="evaData">
         <ul>
+          <li ng-repeat="file in uploadedFiles">
+            <span>{{file.name}} uploaded, <a ng-href="{{file.url}}" target="_blank">open it</a> in new tab</span>
+          </li>
           <li ng-repeat="file in evaData.files">
-            <span>{{file.name}}</span>
-            <span ng-show="file.completed"> uploaded, <a ng-href="{{file.url}}" target="_blank">open it</a> in new tab</span>
-            <div class="progress" ng-hide="file.completed">
+            <span>{{file.name}} is uploading</span>
+            <div class="progress">
               <div class="progress-indicator" style="width: {{file.progress}}%;"></div>
               <div class="progress-value">
                 <span>{{file.progress || 0}}%</span>
@@ -39,9 +41,9 @@
     <script>
       evaporateOptions = {
         signerUrl: '/signer',
-        aws_key:   'AKIAI2QNA2EZZQS4SLUQ',
+        aws_key:   'AKIAI6HJQ7BXS3WOAP5A',
         bucket:    'motoroller',
-        logging:   false
+        logging:   true
       };
     </script>
 
