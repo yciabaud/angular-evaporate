@@ -10,7 +10,7 @@
     <div ng-controller="AppCtrl">
       <div ng-hide="evaData.ready">upload is not available</div>
       <div ng-show="evaData.ready">
-        <input type="file" multiple="multiple" evaporate eva-model="evaData">
+        <form><input type="file" multiple="multiple" evaporate eva-model="evaData"></form>
         <ul>
           <li ng-repeat="file in uploadedFiles">
             <span>{{file.name}} uploaded, <a ng-href="{{file.url}}" target="_blank">open it</a> in new tab</span>
