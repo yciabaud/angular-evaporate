@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "angular": "1.x",
-    "evaporatejs": "*"
+    "evaporatejs": "https://github.com/klenis/EvaporateJS.git#support-for-signer-function"
   },
   "main": [
     "lib/angular-evaporate.js"
