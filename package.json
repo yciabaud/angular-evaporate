@@ -1,0 +1,32 @@
+{
+  "name": "angular-evaporate",
+  "version": "0.1.1",
+  "description": "AngularJS module for the EvaporateJS library",
+  "main": "lib/angular-evaporate.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yciabaud/angular-evaporate.git"
+  },
+  "keywords": [
+    "upload",
+    "resumable upload",
+    "evaporate",
+    "angular"
+  ],
+  "dependencies": {
+    "angular": "1.x",
+    "evaporatejs": "*"
+  },
+  "author": "Eugene Khashin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yciabaud/angular-evaporate/issues"
+  },
+  "homepage": "https://github.com/yciabaud/angular-evaporate#readme"
+}
