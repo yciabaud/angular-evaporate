@@ -20,8 +20,8 @@
     "angular"
   ],
   "dependencies": {
-    "angular": "1.x",
-    "evaporatejs": "*"
+    "angular": "^1.5.5",
+    "evaporate": "^1.1.1"
   },
   "author": "Eugene Khashin",
   "license": "MIT",
